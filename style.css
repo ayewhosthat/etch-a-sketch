@@ -13,10 +13,29 @@ body {
 
 /* use flexbox on the container grid */
 
+.container-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .square {
-    border: 1px solid gray;
-    min-width: 30px;
-    min-height: 30px;
+    border: 1px solid black;
     box-sizing: border-box;
     display: inline-block;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    margin: 16px auto 16px auto;
+}
+
+button {
+    background-color: lightblue;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
 }
